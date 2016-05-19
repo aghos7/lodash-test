@@ -1,0 +1,15 @@
+# Babel-lodash-plugin + uglifyify
+cmd: browserify script.js -o bundle.js -t [ babelify --presets [ es2015 ] --plugins [ lodash ] ] -g uglifyify
+size: 46192
+
+# Babel-lodash-plugin
+cmd: browserify script.js -o bundle.js -t [ babelify --presets [ es2015 ] --plugins [ lodash ] ]
+size: 115996
+
+# uglifyify
+cmd: browserify script.js -o bundle.js -t [ babelify --presets [ es2015 ] ] -g uglifyify
+size: 67411
+
+# Nothing
+cmd: browserify script.js -o bundle.js -t [ babelify --presets [ es2015 ] ]
+size: 512063
